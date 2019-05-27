@@ -4,15 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>about me</title>
+    <title><%= title %></title>
    <%- include("partials/style.ejs") %>
 </head>
 <body>
     
     <%- include("partials/nav.ejs") %>
-    <h1>home page</h1>
-
-    <script src="/public/script.js"></script>
+    <div class="main">
+        <div class="banner">
+            <div class="banner-items">
+                <div class="image">
+                    <img src="https://scontent.fcph4-1.fna.fbcdn.net/v/t1.0-9/12294738_912910935467224_322615123211541870_n.jpg?_nc_cat=111&_nc_ht=scontent.fcph4-1.fna&oh=0d072bef701405c7e8bc6455cf409039&oe=5D58BD59" alt="">
+                </div>
+                <div class="banner-text">
+                    <h1>obaidullah totakhil</h1>
+                    <h2>i am web designer</h2>
+                </div>
+            </div>
+        </div>
+           <div class="container">
+               <div class="about-title">
+                   <h1>about me</h1>
+                   <p>main information about me</p>
+               </div>
+               <div class="row m-auto">
+                   <div class="col-lg-4 col-md-6">
+                      <div class="about-image">
+                          <img src="https://scontent.fcph4-1.fna.fbcdn.net/v/t1.0-9/14370252_1103821729709476_4409278699856708820_n.jpg?_nc_cat=111&_nc_ht=scontent.fcph4-1.fna&oh=7f09ba93a929dd8981eee49e8235fc99&oe=5D56A2C5" alt="">
+                      </div>
+                   </div>
+                   <div class="col-lg-8 col-md-6">
+                     <div class="about-text">
+                         <h2>hi i am obaidullah totakhil</h2>
+                     </div>
+                   </div>
+               </div>
+           </div>
+           <%- include("partials/footer.ejs")%>
+      </div><!--end of main-->
     
+   
+
+   <!-- <a href="/test">next page</a> -->
+
+    
+
+    
+    <%- include("partials/links.ejs")%>
 </body>
 </html>

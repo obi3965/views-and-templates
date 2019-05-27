@@ -22,17 +22,29 @@ app.set('view engine', 'ejs');
 app.set('views', './server/views');
 
 app.get('/home', function(req, res){
-   res.render('home.ejs')
+   res.render('home.ejs',{
+       "title": "min fansy forside",
+       
+   })
+   
 })
 
 app.get('/product', function(req, res){
-   res.render('product.ejs')
+   res.render('product.ejs',{
+      "productPage": "productPage"
+   })
 })
 
 app.get('/contact', function(req, res){
-   res.render('contact.ejs')
+   res.render('contact.ejs',{
+      "contact": "contactpage"
+   })
 })
 
+app.get('/test', function (req, res){
+   res.send('<h1>test.ejs</h1>')
+
+})
 /* indlæs alle de routes serveren skal håndtere
  * dette sker igennem en ny fil, for at splitte koden op i smartere blokke */
 require('./server/routes/routes.js')(app);
