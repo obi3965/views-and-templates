@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar-brand{
+    color: aliceblue !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: rotate(-45deg);
+    margin-left: 20px;
+    font-weight: 600;
+}
+.navbar{
+    background: #e84118 !important;
+    padding: 12px;
+}
+.nav-link{
+    color: white !important;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}

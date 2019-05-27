@@ -21,7 +21,17 @@ app.set('view engine', 'ejs');
 // peg på den mappe hvor alle views filerne er placeret
 app.set('views', './server/views');
 
+app.get('/home', function(req, res){
+   res.render('home.ejs')
+})
 
+app.get('/product', function(req, res){
+   res.render('product.ejs')
+})
+
+app.get('/contact', function(req, res){
+   res.render('contact.ejs')
+})
 
 /* indlæs alle de routes serveren skal håndtere
  * dette sker igennem en ny fil, for at splitte koden op i smartere blokke */
