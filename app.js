@@ -24,20 +24,22 @@ app.set('views', './server/views');
 app.get('/home', function(req, res){
    res.render('home.ejs',{
        "title": "min fansy forside",
-       
+       "page":"home"
    })
    
 })
 
 app.get('/product', function(req, res){
    res.render('product.ejs',{
-      "productPage": "productPage"
+      "productPage": "productPage",
+      "page": "product"
    })
 })
 
 app.get('/contact', function(req, res){
    res.render('contact.ejs',{
-      "contact": "contactpage"
+      "contact": "contactpage",
+      "page": "contact"
    })
 })
 

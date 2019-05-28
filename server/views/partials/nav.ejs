@@ -4,12 +4,16 @@
   <div></div>
 </div>
 <nav>
-    <img src="https://scontent.fcph4-1.fna.fbcdn.net/v/t1.0-9/12294738_912910935467224_322615123211541870_n.jpg?_nc_cat=111&_nc_ht=scontent.fcph4-1.fna&oh=0d072bef701405c7e8bc6455cf409039&oe=5D58BD59" alt="">
+  <div class="logo">
+      <img src="https://scontent.fcph4-1.fna.fbcdn.net/v/t1.0-9/12294738_912910935467224_322615123211541870_n.jpg?_nc_cat=111&_nc_ht=scontent.fcph4-1.fna&oh=0d072bef701405c7e8bc6455cf409039&oe=5D58BD59" alt="">
+  </div>
+    
   <div class="links">
-      
-    <a class="active" href="/home">Home</a>
-    <a href="">Blog</a>
-    <a href="/contact">Contact</a>
-    <a href="product">product</a>
+      <li class="<%= (typeof page != 'undefined' && page == 'home' ? 'active' : '')%>"><a href="/home">Home</a></li>
+      <li class="<%= (typeof page != 'undefined' && page == 'blog' ? 'active' : '')%>"><a href="">Blog</a></li>
+      <li class="<%= (typeof page != 'undefined' && page == 'contact' ? 'active' : '')%>"><a href="/contact">Contact</a></li>
+      <li class="<%= (typeof page != 'undefined' && page == 'product' ? 'active' : '')%>"><a href="product">product</a></li>
+    
+    <
   </div>
 </nav>

@@ -37,7 +37,7 @@
     z-index: 100;
   }
   
-  nav a {
+  nav li a {
     display: block;
     text-decoration: none;
     text-align: center;
@@ -45,17 +45,16 @@
     padding: 5px 0;
   }
   
-  nav a:hover { background-color: rgba(39, 60, 117,1.0);
+  nav li a:hover { background-color: rgba(39, 60, 117,1.0);
     color: rgba(251, 197, 49,1.0);
+    text-decoration: none;
   
 }
   
- 
+ li.active a{
+   background: rgba(39, 60, 117,1.0);
+ }
   
-  nav a.active {
-    background-color: black;
-    color: white;
-  }
   
   nav, .hamburger, .cover {
     -webkit-transition: -webkit-transform .3s;
@@ -93,9 +92,12 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    
     width: 500px;
     
+}
+.logo{
+  border-bottom: 1px solid white;
+  padding-bottom: 19px;
 }
 .image{
     background: rgb(238, 238, 237);
@@ -135,6 +137,65 @@
 /*style my about section*/
 .about-image img{
   width: 100%;
+  border-radius: 8px;
+}
+#introduction{
+    border-collapse: collapse;
+   width: 100%;
+}
+#introduction td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#introduction tr{
+    text-transform: capitalize;
+}
+.btn-default{
+    background: rgba(251, 197, 49,1.0);
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 20px;
+    outline: none !important;
+    border: none !important;
+    width: 150px;
+    padding: 10px;
+}
+.btn-default:hover{
+    transition: all 0.5s ease-in;
+    background: rgba(225, 177, 44,1.0);
+    color: white;
+}
+.about-text h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+#about{
+    margin-top: 40px;
+}
+#ability{
+    height: 50vh;
+    background: rgba(220, 221, 225,1.0);
+    width: 100%;
+    margin-top: 50px;
+}
+.about-title{
+    border-left: 5px solid rgba(251, 197, 49,1.0);
+    margin-left: 14px;
+}
+.about-title h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.about-title p{
+    margin-left: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
 }
   #footer{
       background: black;
