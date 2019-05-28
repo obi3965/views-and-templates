@@ -1,31 +1,46 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*style my navigation bar*/
 .hamburger {
     position: fixed;
     z-index: 9999;
     padding: 15px;
     top: 4%;
   }
-  .links{
+.logo{
+    border-bottom: 1.5px solid rgba(39, 60, 117,1.0);;
+    padding-bottom: 19px;
+  }
+.links{
       margin-top: 20px;
   }
-  nav img{
+nav img{
       width: 150px;
       height: 150px;
       border-radius: 50%;
       margin-left: 70px;
       margin-top: 20px;
   }
-  .hamburger:hover { cursor: pointer; }
+.hamburger:hover{ 
+   cursor: pointer; 
+  }
   
-  .hamburger div {
+.hamburger div {
     background-color: rgba(251, 197, 49,1.0);
     border-radius: 1px;
     height: 5px;
     width: 35px;
   }
   
-  .hamburger div:not(:last-child) { margin-bottom: 5px; }
+.hamburger div:not(:last-child) { 
+    margin-bottom: 5px; 
+  }
 
-  nav {
+nav {
     background-color: rgba(9, 32, 88,1.0);
     display: inline-block;
     position: fixed;
@@ -37,7 +52,7 @@
     z-index: 100;
   }
   
-  nav li a {
+nav li a {
     display: block;
     text-decoration: none;
     text-align: center;
@@ -45,34 +60,40 @@
     padding: 5px 0;
   }
   
-  nav li a:hover { background-color: rgba(39, 60, 117,1.0);
+nav li a:hover { background-color: rgba(39, 60, 117,1.0);
     color: rgba(251, 197, 49,1.0);
     text-decoration: none;
   
 }
-  
- li.active a{
+nav, .hamburger, .cover {
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+}
+.sidenav-active nav, .sidenav-active .hamburger, .sidenav-active .cover {
+  -webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  transform: translateX(300px);
+}
+.sidenav-active .main { 
+  margin-left: 300px; 
+}
+
+li.active a{
    background: rgba(39, 60, 117,1.0);
  }
   
   
-  nav, .hamburger, .cover {
-    -webkit-transition: -webkit-transform .3s;
-    transition: transform .3s;
-  }
+
+
+
   
-  .sidenav-active nav, .sidenav-active .hamburger, .sidenav-active .cover {
-    -webkit-transform: translateX(300px);
-    -ms-transform: translateX(300px);
-    transform: translateX(300px);
-  }
-  .main {
+.main {
     -webkit-transition: margin-left .3s;
     transition: margin-left .3s;
     height: 100vh;
   }
   
-  .sidenav-active .main { margin-left: 300px; }
+  
   
   .banner{
       background-image:linear-gradient(rgba(9, 32, 88,0.8),rgba(9, 32, 88, 0.8)),
@@ -95,10 +116,7 @@
     width: 500px;
     
 }
-.logo{
-  border-bottom: 1px solid white;
-  padding-bottom: 19px;
-}
+
 .image{
     background: rgb(238, 238, 237);
     width: 215px;
