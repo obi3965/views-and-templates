@@ -86,22 +86,20 @@ li.active a{
 
 
 
-  
+/*style my home page section*/  
 .main {
     -webkit-transition: margin-left .3s;
     transition: margin-left .3s;
     height: 100vh;
   }
   
-  
-  
-  .banner{
-      background-image:linear-gradient(rgba(9, 32, 88,0.8),rgba(9, 32, 88, 0.8)),
-       url("https://images.pexels.com/photos/2224788/pexels-photo-2224788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
+.banner{
+    background-image:linear-gradient(rgba(9, 32, 88,0.8),rgba(9, 32, 88, 0.8)),
+    url("https://images.pexels.com/photos/2224788/pexels-photo-2224788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
   }
 
 .banner-items{
@@ -153,6 +151,38 @@ li.active a{
 
 
 /*style my about section*/
+#about{
+  margin-top: 40px;
+}
+.about-title{
+  border-left: 5px solid rgba(251, 197, 49,1.0);
+  margin-left: 14px;
+}
+.about-title h1{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.about-title p{
+  margin-left: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.about-text h2{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: -7px;
+}
+.about-text p{
+margin-top: 14px;
+font-size: 17px;
+word-break: keep-all;
+text-align: justify;
+}
 .about-image img{
   width: 100%;
   border-radius: 8px;
@@ -185,36 +215,17 @@ li.active a{
     background: rgba(225, 177, 44,1.0);
     color: white;
 }
-.about-text h2{
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-#about{
-    margin-top: 40px;
-}
+
+
+
+
 #ability{
     height: 50vh;
     background: rgba(220, 221, 225,1.0);
     width: 100%;
     margin-top: 50px;
 }
-.about-title{
-    border-left: 5px solid rgba(251, 197, 49,1.0);
-    margin-left: 14px;
-}
-.about-title h1{
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    margin-left: 20px;
-}
-.about-title p{
-    margin-left: 20px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 20px;
-}
+
   #footer{
       background: black;
       height: 30vh;
