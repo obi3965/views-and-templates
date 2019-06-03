@@ -22,9 +22,29 @@ app.set('view engine', 'ejs');
 app.set('views', './server/views');
 
 app.get('/home', function(req, res){
+
+   let products =[
+      {
+        image:"https://images.pexels.com/photos/1630588/pexels-photo-1630588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        title:"High School",
+        description: "you can read here about my high school"
+      },
+      {
+         image:"https://images.pexels.com/photos/1258264/pexels-photo-1258264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+         name:"speaker",
+         price: "349"
+      },
+      {
+         image:"https://images.pexels.com/photos/1116558/pexels-photo-1116558.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+         name:"CD",
+         price: "249"
+      }
+   ]
    res.render('home.ejs',{
+       
        "title": "min fansy forside",
-       "page":"home"
+       "page":"home",
+       "productsList": products,
    })
    
 })
